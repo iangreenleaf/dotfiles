@@ -35,6 +35,8 @@ filetype plugin on
 set exrc
 " Disable unsafe commands in local .vimrc files
 set secure
+" Allow modelines
+set modeline
 
 " Set mouse support when it's available
 if has('mouse')
@@ -152,3 +154,5 @@ vnoremap <leader>W :s/\s\+$//e<CR>gv:s/ / /ge<CR>gv=<CR>
 nnoremap <leader>d "_d
 nnoremap <leader>p "0p
 vnoremap <leader>p "_dP
+
+" vim: filetype=vim
