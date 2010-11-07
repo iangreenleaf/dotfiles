@@ -22,6 +22,15 @@ call pathogen#helptags()
 let mapleader=","
 let g:mapleader=","
 
+" Force a reload of ftdetect (for pathogen)
+filetype off
+
+" This enables automatic indentation as you type.
+filetype indent on
+
+" Load filetype-specific plugins
+filetype plugin on
+
 " Allow per-directory .vimrc files
 set exrc
 " Disable unsafe commands in local .vimrc files
@@ -57,9 +66,6 @@ set listchars=tab:➙.,trail:.,extends:❱,precedes:❰,nbsp:░
 
 " Turn off tab highlighting for specific file types
 autocmd filetype gitcommit set listchars+=tab:\ \ 
-
-" This enables automatic indentation as you type.
-filetype indent on
 
 " Give Vim some extra places to look for a tags file
 set tags+=../tags,../TAGS,../../tags,../../TAGS
@@ -117,9 +123,6 @@ inoremap <expr> <C-Space> pumvisible() ? '<C-n>' :
 
 " No toolbar or menubar
 set guioptions-=T
-
-" Load filetype-specific plugins
-filetype plugin on
 
 " Command-T settings
 " Bump match window up against top instead of bottom
