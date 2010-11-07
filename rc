@@ -1,2 +1,151 @@
+" My favoritest .vimrc
+
+" Sources of inspiration (among others):
+" http://nvie.com/posts/how-i-boosted-my-vim/
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+" http://amix.dk/vim/vimrc.html
+"
+" Plugins:
+" pathogen
+" matchit.vim
+" surround.vim
+" repeat.vim
+" Command-T
+" Fugitive
+" Rails.vim
+
+" Load up plugins with pathogen
 call pathogen#runtime_append_all_bundles() 
 call pathogen#helptags() 
+
+" Set the leader key
+let mapleader=","
+let g:mapleader=","
+
+" Allow per-directory .vimrc files
+set exrc
+" Disable unsafe commands in local .vimrc files
+set secure
+
+" Set mouse support when it's available
+if has('mouse')
+    set mouse=a
+endif
+
+" Spellcheck
+set spell
+
+" Indentation
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
+" Ignore case in search, unless search is not all lowercase
+set ignorecase
+set smartcase
+
+" No search highlighting
+set nohlsearch
+
+" Line numbering
+set number
+
+" Highlight tabs and trailing whitespace
+set list
+set listchars=tab:➙.,trail:.,extends:❱,precedes:❰,nbsp:░
+
+" Turn off tab highlighting for specific file types
+autocmd filetype gitcommit set listchars+=tab:\ \ 
+
+" This enables automatic indentation as you type.
+filetype indent on
+
+" Give Vim some extra places to look for a tags file
+set tags+=../tags,../TAGS,../../tags,../../TAGS
+
+" Make Vim highlight .html files like PHP
+au BufRead,BufNewFile *.html set filetype=php
+" Set appropriate formatoptions on alternate PHP extensions
+" (this mostly helps make comment blocks behave appropriately)
+au BufRead,BufNewFile *.html setlocal fo=qrowcb
+au BufRead,BufNewFile *.inc setlocal fo=qrowcb
+
+" Use fancy colors with 256 xterm
+" :set t_AB=m
+" :set t_AF=m
+
+" Choose a color scheme
+"colo 256_blackdust
+colo desert
+colo slate
+
+" Set font on MacVim
+if has("gui_macvim")
+  set gfn=Monaco:h12
+endif
+
+" Set the term to something screen handles
+:set ttymouse=xterm2
+
+" Always start at the beginning of the commit msg
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
+" Collapse split windows fully
+:set winminheight=0
+
+" Don't resize split windows automatically
+set noequalalways
+
+" Always show status line
+set laststatus=2
+
+" Status line content
+set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(❲c%b◦0x%B%)❳\ %-12.(%l,%c%V%)\ %P
+
+" Change the behavior of tab completion
+set wildmenu
+set wildmode=longest:full
+
+" Change behavior of autocompletion
+set completeopt=longest,menuone
+inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+inoremap <expr> <C-Space> pumvisible() ? '<C-n>' :
+  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" No toolbar or menubar
+set guioptions-=T
+
+" Load filetype-specific plugins
+filetype plugin on
+
+" Command-T settings
+" Bump match window up against top instead of bottom
+let g:CommandTMatchWindowAtTop=1
+" Open in split by default
+let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-s>']
+let g:CommandTAcceptSelectionMap=['<C-CR>']
+
+" Persistent undo
+try
+    set undodir=~/.vim/undo
+    set undofile
+catch
+endtry
+
+" Save a file when you forgot to sudo
+cmap w!! %!sudo tee > /dev/null %
+
+" Reload .vimrc with :VimRC
+command! VimRC :source $MYVIMRC
+
+" Whitespace cleanup with ,W
+nnoremap <leader>W :%s/\s\+$//e<CR>:%s/ / /ge<CR>gg=G<CR>
+vnoremap <leader>W :s/\s\+$//e<CR>gv:s/ / /ge<CR>gv=<CR>
+
+" Delete without cluttering the yank register
+nnoremap <leader>d "_d
+nnoremap <leader>p "0p
+vnoremap <leader>p "_dP

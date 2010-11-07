@@ -1,0 +1,12 @@
+" Wrap text in comments
+set textwidth=80
+
+" Wraps lines at words
+set linebreak
+
+" Provide SQL syntax highlighting inside strings
+"let php_sql_query = 1
+
+" Use if syntax highlighting in PHP is struggling
+"let php_minlines=500
+"autocmd BufEnter * :syntax sync minlines=2000
