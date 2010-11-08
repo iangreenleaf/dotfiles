@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /Users/ian/.gitignore
+    excludesfile = /home/youngian/.gitignore
 [color]
     ui = auto
 [alias]
@@ -16,8 +16,8 @@
 	trash-clean = !git ls-files --others --exclude-standard -z | xargs -0 trash-put
 
 [user]
-	name = Ian Young
-	email = iany@amcoonline.net
+    name = Ian Young
+    email = ian.greenleaf@gmail.com
 [bananajour]
 	hostname = yeti.local
 [lighthouse]
