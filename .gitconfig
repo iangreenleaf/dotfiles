@@ -1,0 +1,37 @@
+[core]
+    excludesfile = /Users/ian/.gitignore
+[color]
+    ui = auto
+[alias]
+    co = checkout
+    st = status
+    br = branch
+    ci = commit
+    m = checkout master
+    sign = commit --amend -sC HEAD
+    amend = commit --amend -C HEAD
+    l = log --graph --date=short --pretty='format:%C(green)%ad %C(yellow)%h%Creset %C(cyan)%aN%Creset %s%C(magenta bold)%d%Creset'
+	ll = log --decorate --name-status -M --abbrev-commit
+    p = format-patch master
+	trash-clean = !git ls-files --others --exclude-standard -z | xargs -0 trash-put
+
+[user]
+	name = Ian Young
+	email = iany@amcoonline.net
+[bananajour]
+	hostname = yeti.local
+[lighthouse]
+	userid = 98734
+[diff "ruby"]
+	wordRegex = (@@?|\\b:|[^:]:)?[[:alnum:]_]+|:\"[^\"]+\"|::|[^[:space:]]
+[diff "php"]
+    wordRegex = \\${0,2}[[:alnum:]_]+|::|->|[^[:space:]]
+[merge "tool"]
+[mergetool "gvimdiff"]
+	path = mvim
+[merge]
+	tool = gvimdiff
+[gc]
+	auto = 0
+[clean]
+	requireForce = false
