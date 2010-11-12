@@ -92,8 +92,8 @@ au BufRead,BufNewFile *.inc setlocal fo=qrowcb
 " Choose a color scheme
 if has("gui_running")
   "colo 256_blackdust
-  "colo desert
-  colo slate
+  colo desert
+  "colo slate
   "colo github
 else
   set term=xterm-256color
