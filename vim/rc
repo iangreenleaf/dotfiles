@@ -155,4 +155,7 @@ nnoremap <leader>d "_d
 nnoremap <leader>p "0p
 vnoremap <leader>p "_dP
 
+" :split and jump to a tag
+nnoremap <leader>] <C-W>g<C-]>
+
 " vim: filetype=vim
