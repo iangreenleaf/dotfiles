@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /home/youngian/.gitignore
+    excludesfile = /Users/ian/.gitignore
     editor = vim
     pager = less -+$LESS -i -R
 [color]
@@ -25,8 +25,8 @@
     bs = bisect skip
 
 [user]
-    name = Ian Young
-    email = ian.greenleaf@gmail.com
+	name = Ian Young
+	email = iany@amcoonline.net
 [bananajour]
     hostname = yeti.local
 [lighthouse]
