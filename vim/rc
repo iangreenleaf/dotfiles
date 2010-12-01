@@ -99,6 +99,15 @@ endif
 " Always start at the beginning of the commit msg
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
 
+" Don't hard wrap lines
+set textwidth=0
+set wrapmargin=0
+
+" Do soft wrap lines
+set wrap
+set showbreak=⏎
+highlight NonText gui=NONE
+
 " Collapse split windows fully
 :set winminheight=0
 
