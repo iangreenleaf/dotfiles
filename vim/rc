@@ -90,7 +90,9 @@ colo slate
 
 " Set font on MacVim
 if has("gui_macvim")
-  set gfn=Monaco:h12
+  set guifont=Monaco:h12
+else
+  set guifont=Luxi\ Mono\ 10
 endif
 
 " Set the term to something screen handles
