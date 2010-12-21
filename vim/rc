@@ -111,7 +111,7 @@ set wrapmargin=0
 
 " Do soft wrap lines
 set wrap
-set showbreak=⏎
+set showbreak=⏎\ 
 highlight NonText gui=NONE
 
 " Collapse split windows fully
