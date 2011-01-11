@@ -14,6 +14,8 @@
 	ll = log --decorate --name-status -M --abbrev-commit
     p = format-patch master
 	trash-clean = !git ls-files --others --exclude-standard -z | xargs -0 trash-put
+    branch-delete = !sh -c 'git cherry master $1 | grep -v "^-" > /dev/null && $( git br -d "$1" || exit 0 )  || git br -D "$1"' -
+    brd = !git branch-delete
 
 [user]
     name = Ian Young
