@@ -97,7 +97,11 @@ imap <F1> <Esc>
 
 " Set font
 if has("gui_macvim")
-  set guifont=Monaco:h12
+  try
+    set guifont=Anonymous\ Pro:h13
+  catch
+    set guifont=Monaco:h12
+  endtry
 else
   set guifont=Luxi\ Mono\ 10
 endif
