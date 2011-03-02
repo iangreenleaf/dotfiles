@@ -1,0 +1,2 @@
+--type-add=ruby=.haml,sass=.sass
+--type-add=markdown=.md,.markdown
