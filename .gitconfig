@@ -30,8 +30,6 @@
 [diff "php"]
     wordRegex = \\${0,2}[[:alnum:]_]+|::|->|[^[:space:]]
 [merge "tool"]
-[mergetool "gvimdiff"]
-    path = mvim
 [merge]
     tool = gvimdiff
 [gc]
