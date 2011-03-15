@@ -25,3 +25,6 @@
 [submodule "vim/bundle/unimpaired"]
 	path = vim/bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "vim/indent"]
+	path = vim/indent
+	url = git://gist.github.com/871107.git
