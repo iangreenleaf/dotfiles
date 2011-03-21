@@ -1,4 +1,4 @@
-set autoindent
-set foldmethod=indent
-set foldlevel=1
+setlocal autoindent
+setlocal foldmethod=indent
+setlocal foldlevel=1
 runtime! indent/yaml.vim

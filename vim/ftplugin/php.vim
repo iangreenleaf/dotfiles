@@ -1,8 +1,8 @@
 " Wrap text in comments
-set textwidth=80
+setlocal textwidth=80
 
 " Wraps lines at words
-set linebreak
+setlocal linebreak
 
 " Provide SQL syntax highlighting inside strings
 "let php_sql_query = 1
