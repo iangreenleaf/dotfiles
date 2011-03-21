@@ -62,6 +62,9 @@ set nohlsearch
 " Line numbering
 set number
 
+" No folding most of the time
+set foldmethod=manual
+
 " Highlight tabs and trailing whitespace
 set list
 set listchars=tab:➙.,trail:╍,extends:❱,precedes:❰,nbsp:░
