@@ -10,6 +10,7 @@
     br = branch
     ci = commit
     m = checkout master
+    mg = merge --ff-only
     sign = commit --amend -sC HEAD
     amend = commit --amend -C HEAD
     l = log --graph --date=short --pretty='format:%C(green)%ad %C(yellow)%h%Creset %C(cyan)%aN%Creset %s%C(magenta bold)%d%Creset'
