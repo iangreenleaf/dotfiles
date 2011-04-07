@@ -28,3 +28,6 @@
 [submodule "vim/indent"]
 	path = vim/indent
 	url = git://gist.github.com/871107.git
+[submodule "vim/bundle/colorscheme_solarized"]
+	path = vim/bundle/colorscheme_solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
