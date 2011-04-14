@@ -13,5 +13,5 @@ export PAGER
 
 alias trash="trash-put"
 
-function hgrep { history | grep "$1"; }
-function pgrep { ps aux | grep "$1"; }
+alias hgrep="history | grep"
+alias pgrep="ps aux | grep"
