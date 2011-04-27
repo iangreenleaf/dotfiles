@@ -15,8 +15,8 @@
 " Rails.vim
 
 " Load up plugins with pathogen
-call pathogen#runtime_append_all_bundles() 
-call pathogen#helptags() 
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " Set the leader key
 let mapleader=","
@@ -40,7 +40,7 @@ set modeline
 
 " Set mouse support when it's available
 if has('mouse')
-    set mouse=a
+  set mouse=a
 endif
 
 " Spellcheck
@@ -88,7 +88,7 @@ au BufRead,BufNewFile *.inc setlocal fo=qrowcb
 
 " Choose a color scheme
 "colo 256_blackdust
-colo desert
+"colo desert
 colo slate
 
 " Map F1 to Esc
@@ -153,8 +153,8 @@ let g:CommandTAcceptSelectionMap=['<C-CR>']
 
 " Persistent undo
 try
-    set undodir=~/.vim/undo
-    set undofile
+  set undodir=~/.vim/undo
+  set undofile
 catch
 endtry
 
