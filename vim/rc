@@ -70,7 +70,7 @@ set list
 set listchars=tab:➙.,trail:╍,extends:❱,precedes:❰,nbsp:░
 
 " Turn off tab highlighting for specific file types
-autocmd filetype gitcommit set listchars+=tab:\ \ 
+autocmd FileType gitcommit set listchars+=tab:\ \ 
 
 " Give Vim some extra places to look for a tags file
 set tags+=../tags,../TAGS,../../tags,../../TAGS
