@@ -1,3 +1,9 @@
+" Indentation
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+
 " Wrap text in comments
 setlocal textwidth=80
 
