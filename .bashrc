@@ -1,3 +1,7 @@
+# Always use vim
+EDITOR=vim
+GIT_EDITOR=vim
+
 # Add things to path
 PATH=$PATH:/sbin:/usr/sbin:~/local/bin
 PATH=./script:$PATH
