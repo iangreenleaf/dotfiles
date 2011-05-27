@@ -15,8 +15,14 @@ HISTSIZE=5000
 PAGER=/usr/bin/less\ -i
 export PAGER
 
+# Color output
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+
+# Trash from the CLI
 alias trash="trash-put"
 
+# Common searching aliases
 alias hgrep="history | grep"
 alias pgrep="ps aux | grep"
 
