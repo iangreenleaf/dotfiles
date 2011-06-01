@@ -28,7 +28,7 @@ alias pgrep="ps aux | grep"
 
 function log {
   file="$1"
-  if [ ! -e "$file" ]; then
+  if [ ! -e "$file" -o -d "$file" ]; then
     file=`find log -iname "$file*.log" | head -n 1`
   fi
   tail -f -n 100 "$file"
