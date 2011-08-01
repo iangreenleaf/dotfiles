@@ -42,3 +42,8 @@ PROMPT_COMMAND=$PROMPT_COMMAND${PROMPT_COMMAND:+;}'PS1="\[\e[01m\]\t\[\e[0m\] \[
 if [ -x "`which cowsay`" -a -x "`which fortune`" ]; then
   cowsay $(fortune -a)
 fi
+
+# I use this for things and stuff
+function make_a_hash {
+  date +'%F %T %N' | md5sum | sed 's/^\([0-9a-f]\+\) \+-.*$/\1/' | tee >(xclip -i -selection clipboard)
+}
