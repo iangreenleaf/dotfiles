@@ -48,5 +48,5 @@ fi
 
 # I use this for things and stuff
 function make_a_hash {
-  date +'%F %T %N' | md5sum | sed 's/^\([0-9a-f]\+\) \+-.*$/\1/' | tee >(xclip -i -selection clipboard)
+  date +'%F %T %N' | md5sum | sed 's/^\([0-9a-f]\+\) \+-.*$/\1/' | tee >(pbcopy)
 }
