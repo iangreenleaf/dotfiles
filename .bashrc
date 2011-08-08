@@ -40,7 +40,7 @@ PROMPT_COMMAND=$PROMPT_COMMAND${PROMPT_COMMAND:+;}'PS1="\[\e[01m\]\t\[\e[0m\] \[
 
 # Funsies
 if (type cowsay &> /dev/null) && (type fortune &> /dev/null); then
-  cowsay $(fortune -a)
+  cowsay -f stegosaurus $(fortune -a)
 fi
 
 # I use this for things and stuff
