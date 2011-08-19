@@ -17,6 +17,9 @@
     branch-delete = !sh -c 'git cherry master $1 | grep -v "^-" > /dev/null && $( git br -d "$1" || exit 0 )  || git br -D "$1"' -
     brd = !git branch-delete
     cleanup = !git clean -n | sed -n -e 's/Would remove \\(.*\\)/\\1/p' | xargs trash-put
+    bb = bisect bad
+    bg = bisect good
+    bs = bisect skip
 
 [user]
     name = Ian Young
