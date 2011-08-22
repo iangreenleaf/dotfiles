@@ -39,7 +39,7 @@
 	url = https://github.com/ap/vim-css-color.git
 [submodule "vim/bundle/coffee-script"]
 	path = vim/bundle/coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
+	url = https://github.com/iangreenleaf/vim-coffee-script.git
 [submodule "vim/bundle/stylus"]
 	path = vim/bundle/stylus
 	url = https://github.com/wavded/vim-stylus.git
