@@ -168,6 +168,11 @@ cmap w!! %!sudo tee > /dev/null %
 " Reload .vimrc with :VimRC
 command! VimRC :source $MYVIMRC
 
+" Strip HTML
+command! -range StripHtml :<line1>,<line2>s/<[^>]\+>//g | :silent! <line1>,<line2>g/^\s*$/d
+" Strip HTML, ignoring some tags. Takes one argument, like `img\|span\|p`
+command! -nargs=1 -range StripHtmlExcept :<line1>,<line2>s/<\(\/\?\(<args>\)\)\@![^>]\+>//g | :silent! <line1>,<line2>g/^\s*$/d
+
 " Whitespace cleanup with ,W
 nnoremap <leader>W :%s/\s\+$//e<CR>:%s/ / /ge<CR>gg=G<CR>
 vnoremap <leader>W :s/\s\+$//e<CR>gv:s/ / /ge<CR>gv=<CR>
