@@ -39,10 +39,9 @@ function git_current_branch { git branch 2>/dev/null | grep '^*' | cut -f2- -d' 
 PS1_GIT='\[\e[01m\]\t\[\e[0m\] \[\e[1;32m\]`git_current_branch` \[\e[0m\]\[\e[33m\]\w \[\e[0m\]\[\e[1m\]\$\[\e[0m\] '
 
 # Show return status in the prompt
-function display_last_return_status { if [ $? = 0 ]; then echo -e "\e[0;32m★\e[0m"; else echo -e "\e[0;31m⚠\e[0m"; fi }
-PS1_RETURN='`display_last_return_status`'
+function display_last_return_status { if [ $? = 0 ]; then echo "\[\e[0;32m\]★\[\e[0m\]"; else echo '\[\e[0;31m\]⚠\[\e[0m\]'; fi }
 
-PS1="$PS1_RETURN$PS1_GIT"
+PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"'
 
 # Funsies
 if (type cowsay &> /dev/null) && (type fortune &> /dev/null); then
