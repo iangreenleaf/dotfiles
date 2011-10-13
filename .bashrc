@@ -26,14 +26,6 @@ alias trash="trash-put"
 alias hgrep="history | grep"
 alias pgrep="ps aux | grep"
 
-function log {
-  file="$1"
-  if [ ! -e "$file" -o -d "$file" ]; then
-    file=`find log -iname "$file*.log" | head -n 1`
-  fi
-  tail -f -n 100 "$file"
-}
-
 # Show the current git branch in the prompt
 function git_current_branch { git branch 2>/dev/null | grep '^*' | cut -f2- -d' '; }
 PS1_GIT='\[\e[01m\]\t\[\e[0m\] \[\e[1;32m\]`git_current_branch` \[\e[0m\]\[\e[33m\]\w \[\e[0m\]\[\e[1m\]\$\[\e[0m\] '
