@@ -1,1 +1,6 @@
+# Bash completion
 set show-all-if-unmodified on
+
+# For Ctrl-R
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
