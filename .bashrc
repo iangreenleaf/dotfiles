@@ -12,7 +12,7 @@ export HISTCONTROL=ignoredups
 HISTSIZE=5000
 
 # Make my searches case-insensitive
-PAGER=/usr/bin/less\ -i
+PAGER=less\ -i
 export PAGER
 
 # Color output
