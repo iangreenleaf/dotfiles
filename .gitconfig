@@ -1,5 +1,6 @@
 [core]
     excludesfile = /home/youngian/.gitignore
+    editor = vim
 [color]
     ui = auto
 [alias]
