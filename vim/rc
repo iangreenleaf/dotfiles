@@ -43,6 +43,9 @@ if has('mouse')
   set mouse=a
 endif
 
+" Syntax highlighting
+syntax enable
+
 " Spellcheck
 set spell
 
