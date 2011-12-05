@@ -46,3 +46,6 @@
 [submodule "vim/bundle/gem-browse"]
 	path = vim/bundle/gem-browse
 	url = https://github.com/tpope/gem-browse.git
+[submodule "vim/bundle/linediff"]
+	path = vim/bundle/linediff
+	url = https://github.com/AndrewRadev/linediff.vim.git
