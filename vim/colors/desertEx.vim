@@ -676,8 +676,8 @@ elseif has("gui_running") || &t_Co == 256
     CSAHi DiffText term=reverse cterm=NONE ctermbg=205 ctermfg=16 gui=NONE guibg=#ff6eb4 guifg=#000000
     CSAHi SignColumn term=NONE cterm=NONE ctermbg=250 ctermfg=51 gui=NONE guibg=#bebebe guifg=#00ffff
     CSAHi Conceal term=NONE cterm=NONE ctermbg=248 ctermfg=252 gui=NONE guibg=#a9a9a9 guifg=#d3d3d3
-    CSAHi SpellBad term=reverse cterm=undercurl ctermbg=bg ctermfg=196 gui=undercurl guibg=bg guifg=fg guisp=#ff0000
-    CSAHi SpellCap term=reverse cterm=undercurl ctermbg=bg ctermfg=21 gui=undercurl guibg=bg guifg=fg guisp=#0000ff
+    CSAHi SpellBad term=reverse cterm=undercurl ctermbg=52 ctermfg=fg gui=undercurl guibg=bg guifg=fg guisp=#ff0000
+    CSAHi SpellCap term=reverse cterm=undercurl ctermbg=18 ctermfg=fg gui=undercurl guibg=bg guifg=fg guisp=#0000ff
     CSAHi SpellRare term=reverse cterm=undercurl ctermbg=bg ctermfg=201 gui=undercurl guibg=bg guifg=fg guisp=#ff00ff
     CSAHi perlAnglesSQ term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
     CSAHi perlParensDQ term=NONE cterm=NONE ctermbg=bg ctermfg=fg gui=NONE guibg=bg guifg=fg
