@@ -193,4 +193,8 @@ vnoremap <leader>p "_dP
 " :split and jump to a tag
 nnoremap <leader>] <C-W>g<C-]>
 
+" For surround.vim
+" cs(s will convert to spaces, appropriately
+let g:surround_{char2nr('s')} = " \r"
+
 " vim: filetype=vim
