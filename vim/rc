@@ -96,8 +96,7 @@ if has("gui_running")
   "colo slate
   "colo github
 else
-  set term=xterm-256color
-  colo desertEx
+  colo desert
 endif
 
 " Map F1 to Esc
