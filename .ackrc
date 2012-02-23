@@ -12,3 +12,4 @@
 --type-set=json=.json
 
 --ignore-dir=node_modules
+--ignore-dir=public/system/invoices
