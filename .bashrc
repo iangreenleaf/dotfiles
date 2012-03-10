@@ -28,7 +28,13 @@ alias pgrep="ps aux | grep"
 
 # Show the current git branch in the prompt
 function git_current_branch { git branch 2>/dev/null | grep '^*' | cut -f2- -d' '; }
-PS1_GIT='\[\e[01m\]\t\[\e[0m\] \[\e[1;32m\]`git_current_branch` \[\e[0m\]\[\e[33m\]\w \[\e[0m\]\[\e[1m\]\$\[\e[0m\] '
+function git_dirty_colors {
+  if [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]]; then color='31'; else color='32'; fi
+  echo -n '\[\e[01m\]\t\[\e[0m\] \[\e[1;' "$color" 'm\]`'
+  echo -n $1
+  echo -n '` \[\e[0m\]\[\e[33m\]\w \[\e[0m\]\[\e[1m\]\$\[\e[0m\] '
+}
+PS1_GIT="`git_dirty_colors git_current_branch`"
 
 # Show return status in the prompt
 function display_last_return_status { if [ $? = 0 ]; then echo "\[\e[0;32m\]★\[\e[0m\]"; else echo '\[\e[0;31m\]⚠\[\e[0m\]'; fi }
