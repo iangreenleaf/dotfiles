@@ -148,7 +148,10 @@ set wildmode=longest:full
 
 " Change behavior of autocompletion
 set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <cr> <c-r>=<SID>SpecialCompletionCRBehavior()<cr>
+function s:SpecialCompletionCRBehavior()
+  return pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endfunction
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <C-Space> pumvisible() ? '<C-n>' :
