@@ -149,7 +149,7 @@ set wildmode=longest:full
 " Change behavior of autocompletion
 set completeopt=longest,menuone
 inoremap <cr> <c-r>=<SID>SpecialCompletionCRBehavior()<cr>
-function s:SpecialCompletionCRBehavior()
+function! s:SpecialCompletionCRBehavior()
   return pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 endfunction
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
