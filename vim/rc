@@ -130,6 +130,9 @@ set wrap
 set showbreak=⏎\ 
 highlight NonText gui=NONE
 
+" Always keep some context above/below current line
+set so=4
+
 " Collapse split windows fully
 :set winminheight=0
 
