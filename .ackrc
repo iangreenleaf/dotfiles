@@ -13,3 +13,4 @@
 
 --ignore-dir=node_modules
 --ignore-dir=public/system/invoices
+--ignore-dir=node_modules
