@@ -10,3 +10,5 @@
 --type-set=mustache=.mustache
 --type-set=jade=.jade
 --type-set=json=.json
+
+--ignore-dir=node_modules
