@@ -78,6 +78,9 @@ autocmd FileType gitcommit set listchars+=tab:\ \
 " Give Vim some extra places to look for a tags file
 set tags+=../tags,../TAGS,../../tags,../../TAGS
 
+" Highlight .iced files as coffeescript
+au BufRead,BufNewFile *.iced set filetype=coffee
+
 " Make Vim highlight .html files like PHP
 au BufRead,BufNewFile *.html set filetype=php
 " Set appropriate formatoptions on alternate PHP extensions
