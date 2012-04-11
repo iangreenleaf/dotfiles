@@ -7,9 +7,9 @@ PATH=$PATH:/sbin:/usr/sbin:~/local/bin
 PATH=./script:$PATH
 
 # Don't put duplicate lines in history
-export HISTCONTROL=ignoredups
+export HISTCONTROL=erasedups
 # Bigger history
-HISTSIZE=5000
+export HISTSIZE=100000
 
 # Make my searches case-insensitive
 PAGER=less\ -i
