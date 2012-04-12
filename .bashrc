@@ -3,8 +3,9 @@ EDITOR=vim
 GIT_EDITOR=vim
 
 # Add things to path
-PATH=$PATH:/sbin:/usr/sbin:~/local/bin
-PATH=./script:$PATH
+export PATH=$PATH:/sbin:/usr/sbin:~/local/bin
+export PATH=./node_modules/.bin:$PATH
+export PATH=./script:./bin:$PATH
 
 # Don't put duplicate lines in history
 export HISTCONTROL=erasedups
