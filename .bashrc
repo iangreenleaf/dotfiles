@@ -36,6 +36,11 @@ function display_last_return_status { if [ $? = 0 ]; then echo "\[\e[0;32m\]★\
 
 PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"'
 
+# Hub
+if (type hub &> /dev/null); then
+  alias git=hub
+fi
+
 # Funsies
 if (type cowsay &> /dev/null) && (type fortune &> /dev/null); then
   cowsay -f stegosaurus $(fortune -a)
