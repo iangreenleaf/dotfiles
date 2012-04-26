@@ -42,3 +42,5 @@
     auto = 0
 [clean]
     requireForce = false
+[github]
+	username = iangreenleaf
