@@ -38,7 +38,7 @@ PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"'
 
 # Hub
 if (type hub &> /dev/null); then
-  alias git=hub
+  alias git="hub"
 fi
 
 # Funsies
