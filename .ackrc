@@ -5,6 +5,7 @@
 --type-set=ebuild=.ebuild
 
 --type-set=coffee=.coffee
+--type-add=coffee=.iced
 --type-set=stylus=.stylus,.styl
 --type-set=eco=.eco
 --type-set=mustache=.mustache
