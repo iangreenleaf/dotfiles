@@ -12,4 +12,8 @@
 --type-set=jade=.jade
 --type-set=json=.json
 
+--ignore-dir=public/system/invoices
+
 --ignore-dir=node_modules
+
+--follow
