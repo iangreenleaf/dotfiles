@@ -31,6 +31,8 @@
     wordRegex = (@@?|\\b:|[^:]:)?[[:alnum:]_]+|:\"[^\"]+\"|::|[^[:space:]]
 [diff "php"]
     wordRegex = \\${0,2}[[:alnum:]_]+|::|->|[^[:space:]]
+[push]
+  default = upstream
 [merge]
     tool = gvimdiff
 [gc]
