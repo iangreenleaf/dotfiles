@@ -27,15 +27,10 @@
 [user]
     name = Ian Young
     email = ian.greenleaf@gmail.com
-[bananajour]
-    hostname = yeti.local
-[lighthouse]
-    userid = 98734
 [diff "ruby"]
     wordRegex = (@@?|\\b:|[^:]:)?[[:alnum:]_]+|:\"[^\"]+\"|::|[^[:space:]]
 [diff "php"]
     wordRegex = \\${0,2}[[:alnum:]_]+|::|->|[^[:space:]]
-[merge "tool"]
 [merge]
     tool = gvimdiff
 [gc]
@@ -43,8 +38,8 @@
 [clean]
     requireForce = false
 [github]
-	username = iangreenleaf
+  username = iangreenleaf
 [help]
-	autocorrect = 1
+  autocorrect = 1
 [rerere]
-	enabled = 1
+  enabled = 1
