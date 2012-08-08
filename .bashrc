@@ -3,7 +3,7 @@ EDITOR=vim
 GIT_EDITOR=vim
 
 # Add things to path
-export PATH=$PATH:/sbin:/usr/sbin:~/local/bin
+export PATH=$PATH:/sbin:/usr/sbin:~/bin:~/local/bin
 export PATH=./node_modules/.bin:$PATH
 export PATH=./script:./bin:$PATH
 
