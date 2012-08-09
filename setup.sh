@@ -19,7 +19,7 @@ fi
 #TODO test existence first
 ln -s "$repo/vim/rc" "$home/.vimrc"
 ln -s "$repo/vim" "$home/.vim"
-for f in .ackrc .gitconfig; do
+for f in .ackrc .gitconfig .gitignore; do
   ln -s "$repo/$f" "$home/$f"
 done
 

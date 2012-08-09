@@ -1,5 +1,5 @@
 [core]
-    excludesfile = /home/youngian/.gitignore
+    excludesfile = ~/.gitignore
     editor = vim
     pager = less -+$LESS -i -R
 [color]
