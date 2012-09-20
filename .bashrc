@@ -34,7 +34,9 @@ PS1_GIT='\[\e[01m\]\t\[\e[0m\] \[\e[1;32m\]`git_current_branch` \[\e[0m\]\[\e[33
 # Show return status in the prompt
 function display_last_return_status { if [ $? = 0 ]; then echo "\[\e[0;32m\]★\[\e[0m\]"; else echo '\[\e[0;31m\]⚠\[\e[0m\]'; fi }
 
-PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"'
+function terminal_title { echo -ne "\033]0;$(basename "`pwd`"):$(git_current_branch)($(ls -a | wc -l))\007"; }
+
+PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"; terminal_title'
 
 # Hub
 if (type hub &> /dev/null); then
