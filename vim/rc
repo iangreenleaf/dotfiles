@@ -183,6 +183,19 @@ try
 catch
 endtry
 
+" Trash the current file
+function! TrashPut(force)
+  let trash_result=system("trash-put ".expand("%"))
+  if trash_result != "" && !a:force
+    echo trash_result
+  elseif a:force
+    bdelete!
+  else
+    bdelete
+  endif
+endfunction
+command! -bang Trash call TrashPut(<bang>0)
+
 " Save a file when you forgot to sudo
 cmap w!! %!sudo tee > /dev/null %
 
