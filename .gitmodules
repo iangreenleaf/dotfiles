@@ -58,3 +58,6 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
+[submodule "vim/bundle/handlebars"]
+	path = vim/bundle/handlebars
+	url = https://github.com/nono/vim-handlebars.git
