@@ -12,6 +12,9 @@
 --type-set=jade=.jade
 --type-set=json=.json
 
+--type-add=html=.handlebars
+--type-add=html=.mustache
+
 --ignore-dir=public/system/invoices
 
 --ignore-dir=node_modules
