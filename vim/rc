@@ -223,6 +223,10 @@ nnoremap <leader>] <C-W>g<C-]>
 " cs(s will convert to spaces, appropriately
 let g:surround_{char2nr('s')} = " \r"
 
+" For gist.vim
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+
 " From http://amix.dk/blog/post/19334
 " * and # in visual mode search for the selected thing
 function! VisualSearch(direction) range
