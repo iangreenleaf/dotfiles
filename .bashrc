@@ -38,6 +38,19 @@ function terminal_title { echo -ne "\033]0;$(basename "`pwd`"):$(git_current_bra
 
 PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"; terminal_title'
 
+# Append to history, don't overwrite
+shopt -s histappend
+# Sync bash history every so often
+PROMPT_COMMAND="$PROMPT_COMMAND; history_sync"
+HISTORY_SYNC_EVERY_X_COMMANDS=100
+function history_sync {
+  history_sync_in=$(($history_sync_in-1));
+  if [ $history_sync_in -lt 1 ]; then
+    history -a
+    history_sync_in=$HISTORY_SYNC_EVERY_X_COMMANDS
+  fi
+}
+
 # Hub
 if (type hub &> /dev/null); then
   alias git="hub"
