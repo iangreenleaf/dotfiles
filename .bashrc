@@ -51,6 +51,11 @@ function history_sync {
   fi
 }
 
+# Default `open` command
+if (type exo-open &> /dev/null); then
+  alias open="exo-open"
+fi
+
 # Hub
 if (type hub &> /dev/null); then
   alias git="hub"
