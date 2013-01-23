@@ -56,6 +56,11 @@ if (type exo-open &> /dev/null); then
   alias open="exo-open"
 fi
 
+# Clipboard copy from cli
+if (type xclip &> /dev/null); then
+  alias copy="xclip -selection clipboard"
+fi
+
 # Hub
 if (type hub &> /dev/null); then
   alias git="hub"
