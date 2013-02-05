@@ -1,4 +1,4 @@
---type-add=ruby=.haml
+--type-add=ruby=.haml,.hamlbars
 --type-set=sass=.sass,.scss
 --type-set=markdown=.md,.markdown
 --type-set=textile=.textile
@@ -12,7 +12,7 @@
 --type-set=jade=.jade
 --type-set=json=.json
 
---type-add=html=.handlebars
+--type-add=html=.handlebars,.hbs
 --type-add=html=.mustache
 
 --ignore-dir=public/system/invoices
