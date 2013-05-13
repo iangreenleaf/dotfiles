@@ -35,6 +35,7 @@
   default = upstream
 [merge]
     tool = gvimdiff
+	conflictstyle = diff3
 [gc]
     auto = 0
 [clean]
