@@ -67,8 +67,8 @@ if (type hub &> /dev/null); then
 fi
 
 # Funsies
-if (type cowsay &> /dev/null) && (type fortune &> /dev/null); then
-  cowsay -f stegosaurus $(fortune -a)
+if (type doge &> /dev/null); then
+  doge
 fi
 
 # I use this for things and stuff
