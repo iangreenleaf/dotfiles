@@ -24,6 +24,7 @@
     bb = bisect bad
     bg = bisect good
     bs = bisect skip
+	hash = rev-parse HEAD
 
 [user]
     name = Ian Young
