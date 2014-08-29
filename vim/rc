@@ -18,6 +18,11 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+" Load saved session file, if it exists
+if filereadable(expand("~/.dotfiles/vim/session.vim")) && argc() == 0
+  autocmd GUIEnter * :source ~/.dotfiles/vim/session.vim
+end
+
 " Set the leader key
 let mapleader=","
 let g:mapleader=","
