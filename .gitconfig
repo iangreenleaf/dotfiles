@@ -24,7 +24,8 @@
     bb = bisect bad
     bg = bisect good
     bs = bisect skip
-	hash = rev-parse HEAD
+    hash = rev-parse HEAD
+    init-commit = commit --allow-empty -m 'Initial commit'
 
 [user]
     name = Ian Young
