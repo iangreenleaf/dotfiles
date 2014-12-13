@@ -67,3 +67,6 @@
 [submodule "boom"]
 	path = boom
 	url = https://gist.github.com/5da9bcd1d841ec637676.git
+[submodule "vim/bundle/go"]
+	path = vim/bundle/go
+	url = https://github.com/fatih/vim-go.git
