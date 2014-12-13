@@ -29,7 +29,7 @@
 
 [user]
     name = Ian Young
-    email = ian.greenleaf@gmail.com
+    email = ian@iangreenleaf.com
 [diff "ruby"]
     wordRegex = (@@?|\\b:|[^:]:)?[[:alnum:]_]+|:\"[^\"]+\"|::|[^[:space:]]
 [diff "php"]
