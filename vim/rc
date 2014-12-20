@@ -258,4 +258,8 @@ endfunction
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
 
+" Give command mode some CLI-type movement commands
+:cnoremap <C-a>  <Home>
+:cnoremap <C-e>  <End>
+
 " vim: filetype=vim
