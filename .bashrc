@@ -36,7 +36,7 @@ function display_last_return_status { if [ $? = 0 ]; then echo "\[\e[0;32m\]★\
 
 function terminal_title { echo -ne "\033]0;$(basename "`pwd`"):$(git_current_branch)($(ls -a | wc -l))\007"; }
 
-PROMPT_COMMAND='PS1="$(display_last_return_status)$PS1_GIT"; terminal_title'
+PROMPT_COMMAND="$PROMPT_COMMAND;"'PS1="$(display_last_return_status)$PS1_GIT"; terminal_title'
 
 # Append to history, don't overwrite
 shopt -s histappend
