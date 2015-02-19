@@ -21,7 +21,7 @@ ln -s "$repo/vim/rc" "$home/.vimrc"
 ln -s "$repo/vim" "$home/.vim"
 ln -s "$repo/boom/boom.json" "$home/.boom"
 ln -s "$repo/boom/conf" "$home/.boom.conf"
-for f in .ackrc .gitconfig .gitignore .bash_completion .xinitrc; do
+for f in .ackrc .gitconfig .gitignore .bash_completion .xinitrc .editorconfig; do
   ln -s "$repo/$f" "$home/$f"
 done
 
