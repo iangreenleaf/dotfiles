@@ -73,3 +73,9 @@
 [submodule "vim/bundle/editorconfig"]
 	path = vim/bundle/editorconfig
 	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "vim/bundle/commentary"]
+	path = vim/bundle/commentary
+	url = git@github.com:tpope/vim-commentary.git
+[submodule "vim/bundle/splitjoin"]
+	path = vim/bundle/splitjoin
+	url = git@github.com:AndrewRadev/splitjoin.vim.git
