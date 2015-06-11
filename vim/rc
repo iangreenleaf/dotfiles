@@ -180,6 +180,7 @@ let g:CommandTMatchWindowAtTop=1
 " Open in split by default
 let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-s>']
 let g:CommandTAcceptSelectionMap=['<C-CR>']
+let g:CommandTTraverseSCM='pwd'
 
 " Persistent undo
 try
