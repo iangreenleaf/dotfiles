@@ -154,7 +154,24 @@ set noequalalways
 set laststatus=2
 
 " Status line content
-set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(❲c%b◦0x%B%)❳\ %-12.(%l,%c%V%)\ %P
+"let g:airline_section_b = '%<%f'
+"let g:airline_section_b = airline#section#create_left(['ffenc','file'])
+let g:airline_section_b = '%m%r%=%-9.(%y%)'
+let g:airline_section_x = '%10.10(❲c%b◦0x%B%)❳'
+let g:airline_section_y = '%-12.(%l,%c%V%)'
+let g:airline_section_z = '%P'
+let g:airline#extensions#whitespace#enabled = 0
+let g:airline#extensions#default#section_truncate_width = {
+    \ 'b': 50,
+    \ 'x': 88,
+    \ 'y': 70,
+    \ }
+let g:airline_inactive_collapse=0
+let g:airline#extensions#default#layout = [
+    \ [ 'c', 'b' ],
+    \ [ 'x', 'y', 'z', 'warning' ]
+    \ ]
+"set statusline=%<%f\ %m%r%=%-9.(%y%)\ %10.10(❲c%b◦0x%B%)❳\ %-12.(%l,%c%V%)\ %P
 
 " Change the behavior of tab completion
 set wildmenu

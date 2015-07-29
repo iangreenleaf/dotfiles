@@ -79,3 +79,6 @@
 [submodule "vim/bundle/splitjoin"]
 	path = vim/bundle/splitjoin
 	url = git@github.com:AndrewRadev/splitjoin.vim.git
+[submodule "vim/bundle/airline"]
+	path = vim/bundle/airline
+	url = git@github.com:bling/vim-airline.git
