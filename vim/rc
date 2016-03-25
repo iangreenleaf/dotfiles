@@ -206,6 +206,9 @@ try
 catch
 endtry
 
+" Graphical undo
+nnoremap <leader>u :GundoToggle<CR>
+
 " Trash the current file
 function! TrashPut(force)
   let trash_result=system("trash-put ".expand("%"))
