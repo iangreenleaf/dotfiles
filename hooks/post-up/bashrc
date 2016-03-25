@@ -1,0 +1,6 @@
+#!/bin/bash
+
+include_cmd="source \"~/.dotfiles/.bashrc\""
+if [ -z "`grep "$include_cmd" "$HOME/.bashrc"`" ]; then
+  echo "$include_cmd" >> "$HOME/.bashrc"
+fi

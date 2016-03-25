@@ -65,7 +65,7 @@
 	path = vim/bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
 [submodule "boom"]
-	path = boom
+	path = boom_submodule
 	url = https://gist.github.com/5da9bcd1d841ec637676.git
 [submodule "vim/bundle/go"]
 	path = vim/bundle/go
