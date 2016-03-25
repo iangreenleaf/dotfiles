@@ -7,6 +7,9 @@ export PATH=$PATH:/sbin:/usr/sbin:~/bin:~/local/bin
 export PATH=./node_modules/.bin:$PATH
 export PATH=./script:./bin:$PATH
 
+# Recursive bash globbing
+shopt -s globstar
+
 # Don't put duplicate lines in history
 export HISTCONTROL=erasedups
 # Bigger history
