@@ -57,6 +57,8 @@ function history_sync {
 # Default `open` command
 if (type exo-open &> /dev/null); then
   alias open="exo-open"
+elif (type xdg-open &> /dev/null); then
+  alias open="xdg-open"
 fi
 
 # Clipboard copy from cli
