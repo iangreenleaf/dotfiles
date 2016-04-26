@@ -45,6 +45,7 @@
     requireForce = false
 [github]
   username = iangreenleaf
+	user = iangreenleaf
 [help]
   autocorrect = 1
 [rerere]
