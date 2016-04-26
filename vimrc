@@ -228,6 +228,10 @@ cmap w!! %!sudo tee > /dev/null %
 " Reload .vimrc with :VimRC
 command! VimRC :source $MYVIMRC
 
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 " Strip HTML
 command! -range StripHtml :<line1>,<line2>s/<[^>]\+>//g | :silent! <line1>,<line2>g/^\s*$/d
 " Strip HTML, ignoring some tags. Takes one argument, like `img\|span\|p`
