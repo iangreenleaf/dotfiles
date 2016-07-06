@@ -73,7 +73,7 @@ fi
 
 # Funsies
 if (type cowsay &> /dev/null) && (type fortune &> /dev/null); then
-  cowsay -f stegosaurus $(fortune -a)
+  cowsay -f stegosaurus $(fortune -s -n 400 ~/code/nietzsche/fortune)
 fi
 
 # I use this for things and stuff
