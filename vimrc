@@ -194,6 +194,7 @@ set guioptions-=T
 " Command-T settings
 " Bump match window up against top instead of bottom
 let g:CommandTMatchWindowAtTop=1
+let g:CommandTMatchWindowReverse=0
 " Open in split by default
 let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-s>']
 let g:CommandTAcceptSelectionMap=['<C-CR>']
