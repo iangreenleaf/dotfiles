@@ -198,7 +198,11 @@ let g:CommandTMatchWindowReverse=0
 " Open in split by default
 let g:CommandTAcceptSelectionSplitMap=['<CR>', '<C-s>']
 let g:CommandTAcceptSelectionMap=['<C-CR>']
+" File scanning options
+let g:CommandTFileScanner='git'
+let g:CommandTGitScanSubmodules=1
 let g:CommandTTraverseSCM='pwd'
+let g:CommandTMaxCachedDirectories=4
 
 " Persistent undo
 try
