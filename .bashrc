@@ -103,3 +103,5 @@ complete -o filenames -F _boom_complete boom
 # Disable global menu in Ubuntu
 # Otherwise it throws around warnings when I use XFCE
 UBUNTU_MENUPROXY=
+
+alias ctags-ack="ack -f | ctags -L -"
