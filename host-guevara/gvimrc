@@ -1,0 +1,2 @@
+" Preferred window size on desktop
+:set columns=175 lines=65
