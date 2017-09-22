@@ -292,4 +292,7 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 :cnoremap <C-a>  <Home>
 :cnoremap <C-e>  <End>
 
+" Don't save the stupid .netrwhist file in config folder
+let g:netrw_home=$XDG_CACHE_HOME.'/vim'
+
 " vim: filetype=vim
