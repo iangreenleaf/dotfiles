@@ -46,18 +46,12 @@
 [submodule "vim/bundle/linediff"]
 	path = vim/bundle/linediff
 	url = https://github.com/AndrewRadev/linediff.vim.git
-[submodule "vim/bundle/jade"]
-	path = vim/bundle/jade
-	url = https://github.com/digitaltoad/vim-jade.git
 [submodule "vim/bundle/endwise"]
 	path = vim/bundle/endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = git://github.com/majutsushi/tagbar
-[submodule "vim/bundle/handlebars"]
-	path = vim/bundle/handlebars
-	url = https://github.com/nono/vim-handlebars.git
 [submodule "vim/bundle/webapi-vim"]
 	path = vim/bundle/webapi-vim
 	url = https://github.com/mattn/webapi-vim.git
