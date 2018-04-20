@@ -47,6 +47,6 @@
   username = iangreenleaf
 	user = iangreenleaf
 [help]
-  autocorrect = 1
+  autocorrect = 5
 [rerere]
   enabled = 1
