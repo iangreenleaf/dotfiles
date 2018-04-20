@@ -297,5 +297,7 @@ let g:netrw_home=$XDG_CACHE_HOME.'/vim'
 
 " Disable annoying IDE tooltips
 :set noballooneval
+" Stupid netrw likes to clobber this setting
+let g:netrw_nobeval = 1
 
 " vim: filetype=vim
