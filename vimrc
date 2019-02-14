@@ -265,6 +265,9 @@ let g:gist_open_browser_after_post = 1
 " For go.vim
 let g:go_fmt_fail_silently = 1
 
+" For rainbow.vim
+let g:rainbow_active = 1
+
 " From http://amix.dk/blog/post/19334
 " * and # in visual mode search for the selected thing
 function! VisualSearch(direction) range

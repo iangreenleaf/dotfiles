@@ -82,3 +82,6 @@
 [submodule "vim/bundle/slim"]
 	path = vim/bundle/slim
 	url = https://github.com/slim-template/vim-slim.git
+[submodule "vim/bundle/rainbow"]
+	path = vim/bundle/rainbow
+	url = git@github.com:luochen1990/rainbow.git
