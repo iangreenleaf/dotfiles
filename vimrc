@@ -191,24 +191,12 @@ inoremap <expr> <C-Space> pumvisible() ? '<C-n>' :
 " No toolbar or menubar
 set guioptions-=T
 
-" CtrlP settings
-nnoremap <leader>t :CtrlP<CR>
-" Bump match window up against top instead of bottom
-let g:CommandTMatchWindowAtTop=1
-let g:CommandTMatchWindowReverse=0
-" Open in split by default
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-cr>', '<2-LeftMouse>'],
-    \ 'AcceptSelection("h")': ['<c-x>', '<cr>', '<c-s>'],
-    \ }
-" Jump to existing buffers
-let g:ctrlp_switch_buffer='e'
-
-" Use ag over grep
-if executable('ag')
-  set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
+" Fuzzy finder settings
+nnoremap <leader>t :FZF<CR>
+let g:fzf_action = {
+  \ 'enter': 'split',
+  \ 'ctrl-e': 'open',
+  \ 'ctrl-v': 'vsplit' }
 
 " Persistent undo
 try
