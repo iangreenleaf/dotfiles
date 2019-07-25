@@ -32,7 +32,7 @@ alias pgrep="ps aux | grep"
 
 # Use ag to filter files when present
 if (type ag &> /dev/null); then
-  export FZF_DEFAULT_COMMAND='ag -l --nocolor --hidden -g ""'
+  export FZF_DEFAULT_COMMAND='ag -l --nocolor --hidden -g "" --ignore=.git'
 fi
 
 # Show the current git branch in the prompt
