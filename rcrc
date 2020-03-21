@@ -1,2 +1,2 @@
 SYMLINK_DIRS="vim"
-EXCLUDES="setup.sh boom_submodule"
+EXCLUDES="setup.sh"
