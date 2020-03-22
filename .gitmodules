@@ -34,9 +34,6 @@
 [submodule "vim/bundle/css-color"]
 	path = vim/bundle/css-color
 	url = https://github.com/ap/vim-css-color.git
-[submodule "vim/bundle/coffee-script"]
-	path = vim/bundle/coffee-script
-	url = https://github.com/iangreenleaf/vim-coffee-script.git
 [submodule "vim/bundle/linediff"]
 	path = vim/bundle/linediff
 	url = https://github.com/AndrewRadev/linediff.vim.git
