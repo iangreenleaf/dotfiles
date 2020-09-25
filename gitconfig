@@ -50,3 +50,5 @@
   autocorrect = 5
 [rerere]
   enabled = 1
+[pull]
+	rebase = false
