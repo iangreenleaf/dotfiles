@@ -6,7 +6,7 @@
     ui = auto
 [alias]
     co = checkout
-    st = status
+    st = status -sb
     br = branch
     ci = commit
     m = checkout master
