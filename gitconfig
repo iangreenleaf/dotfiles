@@ -23,7 +23,9 @@
     bs = bisect skip
     hash = rev-parse HEAD
     init-commit = commit --allow-empty -m 'Initial commit'
-
+    stash-all = stash save --include-untracked
+    attach = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    pushup = !git push --set-upstream origin `git symbolic-ref --short HEAD`
 [user]
     name = Ian Young
     email = ian@iangreenleaf.com
