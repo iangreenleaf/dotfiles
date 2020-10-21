@@ -59,6 +59,9 @@ function history_sync {
   fi
 }
 
+# Persist history in Erlang/Elixir shell
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 # Default `open` command
 if (type exo-open &> /dev/null); then
   alias open="exo-open"
