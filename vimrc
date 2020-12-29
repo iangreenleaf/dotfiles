@@ -107,7 +107,9 @@ if has("gui_running")
   colo slate
   "colo github
 else
-  set term=xterm-256color
+  if !has('nvim')
+    set term=xterm-256color
+  end
   colo desertEx
 endif
 
@@ -122,12 +124,16 @@ if has("gui_macvim")
   catch
     set guifont=Monaco:h12
   endtry
-else
+elseif has("gui_gtk2") || has("gui_gtk3")
   set guifont=Luxi\ Mono\ 10
+else
+  set guifont=Luxi\ Mono:h10
 endif
 
 " Set the term to something screen handles
-:set ttymouse=xterm2
+if !has('nvim')
+  set ttymouse=xterm2
+endif
 
 " Always start at the beginning of the commit msg
 autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
@@ -293,8 +299,13 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 let g:netrw_home=$XDG_CACHE_HOME.'/vim'
 
 " Disable annoying IDE tooltips
-:set noballooneval
+if exists('&ballooneval')
+  set noballooneval
+endif
 " Stupid netrw likes to clobber this setting
 let g:netrw_nobeval = 1
+
+" No incremental search
+set noincsearch
 
 " vim: filetype=vim
