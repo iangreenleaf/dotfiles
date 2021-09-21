@@ -3,3 +3,4 @@ tags
 .vimrc
 EXTRA_FILES
 Session.vim
+.byebug_history
