@@ -14,6 +14,12 @@
 " Fugitive
 " Rails.vim
 
+let g:airline#extensions#ale#enabled = 1
+let g:ale_open_list = 'on_save'
+
+let g:ale_linters = {'javascript': ['eslint']}
+"autocmd FileType javascript let g:ale_linters = findfile('.eslintrc', '.;') != '' ? {'javascript': ['eslint']} : {'javascript': ['']}
+
 " Load up plugins with pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -307,15 +313,5 @@ let g:netrw_nobeval = 1
 
 " No incremental search
 set noincsearch
-
-" Syntastic settings
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_aggregate_errors = 1
-
-let g:syntastic_javascript_checkers=['eslint']
-let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
 
 " vim: filetype=vim
