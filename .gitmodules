@@ -58,12 +58,6 @@
 [submodule "vim/bundle/airline"]
 	path = vim/bundle/airline
 	url = git@github.com:bling/vim-airline.git
-[submodule "vim/bundle/javascript"]
-	path = vim/bundle/javascript
-	url = git@github.com:pangloss/vim-javascript.git
-[submodule "vim/bundle/jsx"]
-	path = vim/bundle/jsx
-	url = git@github.com:mxw/vim-jsx.git
 [submodule "vim/bundle/gundo"]
 	path = vim/bundle/gundo
 	url = git@github.com:sjl/gundo.vim.git
@@ -76,6 +70,9 @@
 [submodule "vim/bundle/elixir"]
 	path = vim/bundle/elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
-[submodule "vim/bundle/syntastic"]
-	path = vim/bundle/syntastic
-	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "vim/bundle/jsx-pretty"]
+	path = vim/bundle/jsx-pretty
+	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
+[submodule "vim/bundle/ale"]
+	path = vim/bundle/ale
+	url = git@github.com:dense-analysis/ale.git
