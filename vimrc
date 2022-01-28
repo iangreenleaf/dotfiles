@@ -16,6 +16,7 @@
 
 let g:airline#extensions#ale#enabled = 1
 let g:ale_open_list = 'on_save'
+let g:ale_cache_executable_check_failures = 1
 
 let g:ale_linters = {'javascript': ['eslint']}
 "autocmd FileType javascript let g:ale_linters = findfile('.eslintrc', '.;') != '' ? {'javascript': ['eslint']} : {'javascript': ['']}
