@@ -1,5 +1,4 @@
 *.sw[op]
-tags
 .vimrc
 EXTRA_FILES
 Session.vim
