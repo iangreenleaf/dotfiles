@@ -1,3 +1,5 @@
 This repo uses rcm, an rc file manager.
 
-To begin, install rcm and run setup.sh
+To begin, install rcm and run `setup.sh`.
+
+To update an installation, simply run `rcup`.
