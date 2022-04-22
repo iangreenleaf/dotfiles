@@ -4,15 +4,6 @@
 " http://nvie.com/posts/how-i-boosted-my-vim/
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 " http://amix.dk/vim/vimrc.html
-"
-" Plugins:
-" pathogen
-" matchit.vim
-" surround.vim
-" repeat.vim
-" Command-T
-" Fugitive
-" Rails.vim
 
 let g:airline#extensions#ale#enabled = 1
 let g:ale_open_list = 'on_save'
@@ -22,8 +13,7 @@ let g:ale_linters = {'javascript': ['eslint']}
 "autocmd FileType javascript let g:ale_linters = findfile('.eslintrc', '.;') != '' ? {'javascript': ['eslint']} : {'javascript': ['']}
 
 " Load up plugins with pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+execute pathogen#infect()
 
 " Load saved session file, if it exists
 if filereadable(expand("~/.dotfiles/vim/session.vim")) && argc() == 0
@@ -33,9 +23,6 @@ end
 " Set the leader key
 let mapleader=","
 let g:mapleader=","
-
-" Force a reload of ftdetect (for pathogen)
-filetype off
 
 " This enables automatic indentation as you type.
 filetype indent on
