@@ -261,6 +261,10 @@ let g:go_fmt_fail_silently = 1
 
 " For rainbow.vim
 let g:rainbow_active = 1
+" See: https://github.com/luochen1990/rainbow/issues/98
+let g:rainbow_conf = {
+\   'parentheses_options': 'contains=@Spell',
+\}
 
 " From http://amix.dk/blog/post/19334
 " * and # in visual mode search for the selected thing
