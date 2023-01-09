@@ -1,6 +1,6 @@
 # Always use vim
-EDITOR=vim
-GIT_EDITOR=vim
+EDITOR=nvim
+GIT_EDITOR=nvim
 
 # Add things to path
 export PATH=$PATH:/sbin:/usr/sbin:~/bin:~/local/bin
