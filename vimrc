@@ -123,8 +123,14 @@ if has("gui_macvim")
   endtry
 elseif has("gui_gtk2") || has("gui_gtk3")
   set guifont=Luxi\ Mono\ 10
+  set linespace=-4
 else
-  set guifont=Luxi\ Mono:h10
+  try
+    set guifont=Red\ Hat\ Mono:h10
+    set linespace=-5
+  catch
+    set guifont=Luxi\ Mono:h10
+  endtry
 endif
 
 " Set the term to something screen handles
