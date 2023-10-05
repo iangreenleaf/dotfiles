@@ -1,4 +1,21 @@
-require'lspconfig'.ruby_ls.setup{}
+# Requires paq to be installed: https://github.com/savq/paq-nvim
+require "paq" {
+    "savq/paq-nvim",
+    "neovim/nvim-lspconfig",
+}
+
+local nvim_lsp = require('lspconfig')
+vim.opt.signcolumn = "yes"
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "ruby",
+  group = vim.api.nvim_create_augroup("RubyLSP", { clear = true }),
+  callback = function()
+    vim.lsp.start {
+      name = "standard",
+      cmd = { "standardrb", "--lsp" },
+    }
+  end,
+})
 
 vim.cmd([[
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
