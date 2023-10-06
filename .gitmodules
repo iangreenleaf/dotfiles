@@ -73,6 +73,3 @@
 [submodule "vim/bundle/jsx-pretty"]
 	path = vim/pack/baseplugins/start/jsx-pretty
 	url = git@github.com:MaxMEllon/vim-jsx-pretty.git
-[submodule "vim/bundle/ale"]
-	path = vim/pack/baseplugins/start/ale
-	url = git@github.com:dense-analysis/ale.git

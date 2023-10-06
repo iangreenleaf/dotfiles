@@ -6,16 +6,9 @@
 " http://amix.dk/vim/vimrc.html
 
 let g:airline#extensions#ale#enabled = 1
-let g:ale_disable_lsp = 1
-let g:ale_linters_explicit = 1
-let g:ale_open_list = 'on_save'
-let g:ale_cache_executable_check_failures = 1
 " Neovim filetype features
 let g:do_filetype_lua = 1
 let g:did_load_filetypes = 0
-
-let g:ale_linters = {'javascript': ['eslint']}
-"autocmd FileType javascript let g:ale_linters = findfile('.eslintrc', '.;') != '' ? {'javascript': ['eslint']} : {'javascript': ['']}
 
 " Load up plugins with pathogen
 execute pathogen#infect()
