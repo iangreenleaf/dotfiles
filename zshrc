@@ -69,6 +69,6 @@ plugins=(bundler github dotenv)
 
 alias vvim="nvim-qt"
 
-source $ZSH/oh-my-zsh.sh
-
 source "$HOME/.zshrc.local"
+
+source $ZSH/oh-my-zsh.sh
