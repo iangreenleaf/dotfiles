@@ -69,6 +69,12 @@ plugins=(bundler github dotenv)
 
 alias vvim="nvim-qt"
 
+EDITOR=nvim
+GIT_EDITOR=nvim
+
+# Persist history in Erlang/Elixir shell
+export ERL_AFLAGS="-kernel shell_history enabled"
+
 source "$HOME/.zshrc.local"
 
 source $ZSH/oh-my-zsh.sh
