@@ -17,6 +17,8 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
+require'lspconfig'.eslint.setup{}
+
 vim.cmd([[
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
