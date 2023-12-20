@@ -72,8 +72,35 @@ alias vvim="nvim-qt"
 EDITOR=nvim
 GIT_EDITOR=nvim
 
+# Make my searches case-insensitive
+export PAGER="less -i"
+
+# Trash from the CLI
+alias trash="trash-put"
+
+# Common searching aliases
+alias hgrep="history | grep"
+alias pgrep="ps aux | grep"
+
+# Use ag to filter files when present
+if (type ag &> /dev/null); then
+  export FZF_DEFAULT_COMMAND='ag -l --nocolor --hidden -g "" --ignore=.git'
+fi
+
 # Persist history in Erlang/Elixir shell
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+# Default `open` command
+if (type exo-open &> /dev/null); then
+  alias open="exo-open"
+elif (type xdg-open &> /dev/null); then
+  alias open="xdg-open"
+fi
+
+# Clipboard copy from cli
+if (type xclip &> /dev/null); then
+  alias copy="xclip -selection clipboard"
+fi
 
 source "$HOME/.zshrc.local"
 
