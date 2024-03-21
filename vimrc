@@ -110,9 +110,9 @@ map <F1> <Esc>
 imap <F1> <Esc>
 
 " Set font
-if has("gui_macvim")
+if has("macunix")
   try
-    set guifont=Anonymous\ Pro:h13
+    set guifont=Red\ Hat\ Mono:h12
   catch
     set guifont=Monaco:h12
   endtry
