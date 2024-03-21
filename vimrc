@@ -116,9 +116,6 @@ if has("macunix")
   catch
     set guifont=Monaco:h12
   endtry
-elseif has("gui_gtk2") || has("gui_gtk3")
-  set guifont=Luxi\ Mono\ 10
-  set linespace=-4
 else
   try
     set guifont=Red\ Hat\ Mono:h10
