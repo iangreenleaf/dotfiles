@@ -10,6 +10,10 @@ let g:airline#extensions#ale#enabled = 1
 let g:do_filetype_lua = 1
 let g:did_load_filetypes = 0
 
+if has("macunix")
+  set rtp+=/opt/homebrew/opt/fzf
+endif
+
 " Load up plugins with pathogen
 execute pathogen#infect()
 
