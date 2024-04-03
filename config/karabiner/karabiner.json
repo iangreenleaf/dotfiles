@@ -756,8 +756,7 @@
                                             "^net\\.kovidgoyal\\.kitty$",
                                             "^tv\\.parsec\\.www$",
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^dev\\.warp\\.Warp-Stable$"
+                                            "^com\\.googlecode\\.iterm2$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
