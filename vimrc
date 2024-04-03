@@ -5,7 +5,6 @@
 " http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 " http://amix.dk/vim/vimrc.html
 
-let g:airline#extensions#ale#enabled = 1
 " Neovim filetype features
 let g:do_filetype_lua = 1
 let g:did_load_filetypes = 0
