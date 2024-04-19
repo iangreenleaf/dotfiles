@@ -18,6 +18,31 @@
                 },
                 "rules": [
                     {
+                        "description": "Ctrl+Space to Cmd+Ctrl+Space (Emoji keyboard)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "spacebar",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Sticky Alt to Cmd Variable",
                         "manipulators": [
                             {
@@ -465,7 +490,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^dev\\.warp\\.Warp-Stable$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -497,7 +523,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.apple\\.Terminal$",
-                                            "^com\\.googlecode\\.iterm2$"
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^dev\\.warp\\.Warp-Stable$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
