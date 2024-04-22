@@ -1,7 +1,7 @@
 [core]
     excludesfile = ~/.gitignore
     editor = vim
-    pager = less -+$LESS -i -R
+    pager = delta
 [color]
     ui = auto
 [alias]
@@ -29,15 +29,12 @@
 [user]
     name = Ian Young
     email = ian@iangreenleaf.com
-[diff "ruby"]
-    wordRegex = (@@?|\\b:|[^:]:)?[[:alnum:]_]+|:\"[^\"]+\"|::|[^[:space:]]
-[diff "php"]
-    wordRegex = \\${0,2}[[:alnum:]_]+|::|->|[^[:space:]]
 [push]
   default = upstream
+	followtags = true
 [merge]
   tool = nvimdiff
-  conflictstyle = diff3
+  conflictstyle = zdiff3
 [gc]
     auto = 0
 [clean]
@@ -53,3 +50,23 @@
 	rebase = false
 [init]
 	defaultBranch = main
+[rebase]
+	autostash = true
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+[diff]
+    colorMoved = default
+    algorithm = histogram
+	submodule = log
+[url "git@github.com:"]
+    insteadOf = "https://github.com/"
+[branch]
+	sort = -committerdate
+[tag]
+	sort = taggerdate
+[status]
+	submoduleSummary = true
+[submodule]
+	recurse = true
