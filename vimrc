@@ -122,7 +122,6 @@ if has("macunix")
 else
   try
     set guifont=Red\ Hat\ Mono:h10
-    set linespace=-5
   catch
     set guifont=Luxi\ Mono:h10
   endtry
